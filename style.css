@@ -4,18 +4,23 @@
 }
 body{
   font-family: 'Lato', sans-serif;
-    ;
 }
-div.foo{
-  padding-top: 5rem;
-  width: 90%;
+div.logo{
+  padding: 1rem 0;
   margin: 0 auto;
   text-align: center;
+}
+.lead {
+  font-size: 1.5rem;
+  opacity: 0.6;
+}
+.lead.head {
+  margin-bottom: 2rem;
 }
 .letter{
   display: inline-block;
   font-weight: 900;
-  font-size: 5em;
+  font-size: 4em;
   margin: 0.1em;
   position: relative;
   color: red;
