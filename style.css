@@ -29,6 +29,24 @@ a:hover {
 a.btn {
   color: white !important;
 }
+
+/* @media (min-width: 576px) { */
+@media only screen and (max-width: 40em) {
+  .letter{
+    font-size: 3em !important;
+  }
+  .lead{
+    font-size: 1rem !important;
+  }
+  .lead.head {
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+  }
+  .btn-group-lg > .btn, .btn-lg {
+    font-size: 1rem !important;
+  }
+}
+
 .letter{
   display: inline-block;
   font-weight: 900;
