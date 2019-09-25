@@ -6,21 +6,28 @@ body{
   font-family: 'Lato', sans-serif;
 }
 div.logo{
-  padding: 1rem 0;
   margin: 0 auto;
   text-align: center;
+  line-height: 1;
 }
 .lead {
-  font-size: 1.5rem;
-  opacity: 0.6;
+  font-size: 2rem;
+  opacity: 0.8;
 }
 .lead.head {
-  margin-bottom: 2rem;
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+  margin-top: 2.5rem;
+  color: red;
+
+}
+footer {
+  margin: 0;
 }
 .letter{
   display: inline-block;
   font-weight: 900;
-  font-size: 4em;
+  font-size: 10em;
   margin: 0.1em;
   position: relative;
   color: red;
