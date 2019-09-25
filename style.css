@@ -19,10 +19,15 @@ div.logo{
   margin-bottom: 2.5rem;
   margin-top: 2.5rem;
   color: red;
-
 }
-footer {
-  margin: 0;
+a {
+  color: red !important;
+}
+a:hover {
+  color: red !important;
+}
+a.btn {
+  color: white !important;
 }
 .letter{
   display: inline-block;
