@@ -20,6 +20,15 @@ div.logo{
   margin-top: 2.5rem;
   color: red;
 }
+ol {
+  padding: 0 10rem 0 4rem;
+}
+ol > li.lead > strong {
+  text-decoration: underline;
+}
+h4 {
+  margin-bottom: 1rem !important;
+}
 a {
   color: red !important;
 }
