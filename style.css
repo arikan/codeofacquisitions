@@ -54,6 +54,9 @@ a.btn {
   .btn-group-lg > .btn, .btn-lg {
     font-size: 1rem !important;
   }
+  ol {
+    padding: 0 1rem 0 1rem;
+  }
 }
 
 .letter{
