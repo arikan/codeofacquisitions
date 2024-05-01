@@ -2,245 +2,297 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="Burak Arıkan & Ahmet Öğüt">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="Burak Arıkan & Ahmet Öğüt">
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"
-        type="text/javascript"></script>
+  <link href="style.css" rel="stylesheet">
+  <link href="product.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-    <link rel="stylesheet" href="./style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
 
-    <link href="product.css" rel="stylesheet">
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@codeacquisition" />
+  <meta name="twitter:title" content="Code of Acquisitions" />
+  <meta name="twitter:description"
+    content="Mapping art institutions and galleries in relation to their ethical codes" />
+  <meta name="twitter:image"
+    content="https://s3.amazonaws.com/gc-system-images/graphs/images/4ec2e5c1-80db-454f-bae3-7dc73c92110e/original/Firefox_Developer_EditionScreenSnapz331.png?1569356868" />
+  <meta name="twitter:url" content="https://codeofacquisitions.org/" />
+  <meta name="twitter:image:src"
+    content="https://s3.amazonaws.com/gc-system-images/graphs/images/4ec2e5c1-80db-454f-bae3-7dc73c92110e/original/Firefox_Developer_EditionScreenSnapz331.png?1569356868">
+  <meta name="twitter:domain" content="https://codeofacquisitions.org/">
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@codeacquisition" />
-    <meta name="twitter:title" content="Code of Acquisitions" />
-    <meta name="twitter:description" content="Mapping art institutions and galleries in relation to their ethical codes" />
-    <meta name="twitter:image" content="https://s3.amazonaws.com/gc-system-images/graphs/images/4ec2e5c1-80db-454f-bae3-7dc73c92110e/original/Firefox_Developer_EditionScreenSnapz331.png?1569356868" />
-    <meta name="twitter:url" content="https://codeofacquisitions.org/" />
-    <meta name="twitter:image:src" content="https://s3.amazonaws.com/gc-system-images/graphs/images/4ec2e5c1-80db-454f-bae3-7dc73c92110e/original/Firefox_Developer_EditionScreenSnapz331.png?1569356868">
-    <meta name="twitter:domain" content="https://codeofacquisitions.org/">
+  <meta property="og:url" content="https://codeofacquisitions.org/" />
+  <meta property="og:title" content="Code of Acquisitions" />
+  <meta property="og:description" content="Mapping art institutions and galleries in relation to their ethical codes" />
+  <meta property="og:image"
+    content="https://s3.amazonaws.com/gc-system-images/graphs/images/4ec2e5c1-80db-454f-bae3-7dc73c92110e/original/Firefox_Developer_EditionScreenSnapz331.png?1569356868" />
 
-    <meta property="og:url" content="https://codeofacquisitions.org/" />
-    <meta property="og:title" content="Code of Acquisitions" />
-    <meta property="og:description" content="Mapping art institutions and galleries in relation to their ethical codes" />
-    <meta property="og:image" content="https://s3.amazonaws.com/gc-system-images/graphs/images/4ec2e5c1-80db-454f-bae3-7dc73c92110e/original/Firefox_Developer_EditionScreenSnapz331.png?1569356868" />
-
-    <title>Code of Acquisitions</title>
+  <title>Code of Acquisitions</title>
 </head>
 
 <body>
-    <div class="position-relative overflow-hidden text-center pt-5">
-        <div class="col-md-10 p-lg-12 mx-auto my-12">
-            <div class="logo">
-                <span class="letter" data-letter="C">C</span>
-                <span class="letter" data-letter="O">O</span>
-                <span class="letter" data-letter="D">D</span>
-                <span class="letter" data-letter="E">E</span>
-                <span class="letter" data-letter=""></span>
-                <span class="letter" data-letter="O">O</span>
-                <span class="letter" data-letter="F">F</span>
-                <span class="letter" data-letter=""></span>
-                <span class="letter" data-letter="A">A</span>
-                <span class="letter" data-letter="C">C</span>
-                <span class="letter" data-letter="Q">Q</span>
-                <span class="letter" data-letter="U">U</span>
-                <span class="letter" data-letter="I">I</span>
-                <span class="letter" data-letter="S">S</span>
-                <span class="letter" data-letter="I">I</span>
-                <span class="letter" data-letter="T">T</span>
-                <span class="letter" data-letter="I">I</span>
-                <span class="letter" data-letter="O">O</span>
-                <span class="letter" data-letter="N">N</span>
-                <span class="letter" data-letter="S">S</span>
-            </div>
-            <p class="lead head font-weight-normal">
-                Exposing the good and bad practices of art institutions, galleries, and studios
-            </p>
-            <a class="btn btn-outline btn-danger btn-lg" target="_blank" href="https://forms.gle/6kjv5jAk2R1kGAJA8">
-                Submit your case
-            </a>
-        </div>
+  <div class="position-relative overflow-hidden text-center pt-5">
+    <div class="col-md-10 p-lg-12 mx-auto my-12">
+      <div class="logo">
+        <span class="letter" data-letter="C">C</span>
+        <span class="letter" data-letter="O">O</span>
+        <span class="letter" data-letter="D">D</span>
+        <span class="letter" data-letter="E">E</span>
+        <span class="letter" data-letter=""></span>
+        <span class="letter" data-letter="O">O</span>
+        <span class="letter" data-letter="F">F</span>
+        <span class="letter" data-letter=""></span>
+        <span class="letter" data-letter="A">A</span>
+        <span class="letter" data-letter="C">C</span>
+        <span class="letter" data-letter="Q">Q</span>
+        <span class="letter" data-letter="U">U</span>
+        <span class="letter" data-letter="I">I</span>
+        <span class="letter" data-letter="S">S</span>
+        <span class="letter" data-letter="I">I</span>
+        <span class="letter" data-letter="T">T</span>
+        <span class="letter" data-letter="I">I</span>
+        <span class="letter" data-letter="O">O</span>
+        <span class="letter" data-letter="N">N</span>
+        <span class="letter" data-letter="S">S</span>
+      </div>
+      <p class="lead head font-weight-normal">
+        Exposing the good and bad practices of art institutions, galleries, and studios
+      </p>
+      <a class="btn btn-outline btn-danger btn-lg" target="_blank" href="https://forms.gle/6kjv5jAk2R1kGAJA8">
+        Submit your case
+      </a>
     </div>
+  </div>
 
-    <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
-        <div class="mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-            <iframe src="https://graphcommons.com/graphs/fd9aa39c-ca69-4a20-9e11-898bbb9e20e5/e"
-                    width="100%"
-                    height="640"
-                    frameborder="0"
-                    allowfullscreen>
-            </iframe>
-            <div class="graphDesc">
-                <div>
-                    <span style="color: blue">Art Institution (Blue)</span>,
-                    <span style="color: black">Ethic Code (Black)</span>,
-                    <span style="color: red">FAILS (Red)</span>,
-                    <span style="color: green">SUCCEEDS (Green)</span>
-                </div>
-                <div class="graphNote">
-                    Drag, zoom, and click on the nodes to explore.
-                    <a href="https://graphcommons.com/graphs/fd9aa39c-ca69-4a20-9e11-898bbb9e20e5/" target="_blank" rel="noreferrer">View larger ↗</a>
-                </div>
-                <div class="warningMobile">
-                    🖥 Please view on a large screen
-                </div>
-            </div>
+  <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+    <div class="mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+      <iframe src="https://graphcommons.com/graphs/fd9aa39c-ca69-4a20-9e11-898bbb9e20e5/e" width="100%" height="640"
+        frameborder="0" allowfullscreen>
+      </iframe>
+      <div class="graphDesc">
+        <div>
+          <span style="color: blue">Art Institution (Blue)</span>,
+          <span style="color: black">Ethic Code (Black)</span>,
+          <span style="color: red">FAILS (Red)</span>,
+          <span style="color: green">SUCCEEDS (Green)</span>
         </div>
-    </div>
-
-    <div class="justify-content-center d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
-        <div class="mr-md-3 pt-3 px-3 pt-md-5 px-md-5 overflow-hidden">
-            <h4>About</h4>
-            <p class="lead">
-                Code of Acquisitions is a platform exposing both good and bad practices of art institutions, galleries, and studios.
-                It is based on published policies as well as reported cases of misconduct and abuse.
-                Instances include artists not being paid, being misled post-sales, or not having their works returned.
-            </p>
-            <p class="lead">
-                Often, artists find it challenging to pursue legal action against a conflict due to their precarious conditions, and particularly because lack of establishing individual legal proceedings overseas.
-            </p>
-            <p class="lead">
-                The Code of Acquisitions platform allows anyone to submit their cases, either anonymously or openly.
-                Cases could range from gender and race discrimination to misconduct of payments.
-                Such submissions contribute to a database of conflicts, codes, and interactive visualizations
-                that will increase awareness about the issues and hold organizations accountable through their reputation.
-            </p>
-
-            <h4>Case Submission</h4>
-            <p class="lead">
-                <strong><a href="https://forms.gle/6kjv5jAk2R1kGAJA8" target="_blank">Submit a case</a></strong> of misconduct or abuse you've experienced with an
-                institution or a gallery or a studio.
-            </p>
-
-            <h4>Workshops</h4>
-            <p class="lead">
-                We conduct workshops upon invitation from institutions (<a href="mailto:codeofacquisitions@gmail.com?subject=Code of Acquisitions Workshop">contact for workshops</a>).
-                During these sessions, participants propose cases based on published sources, and collectively evaluate them, and add the cases to the database.
-                <ul>
-                    <li>
-                        <strong>Bauhaus-Universität Weimar</strong><br />
-                        Workshop with students of Department of Architecture and Urbanism<br />
-                        June 2023
-                    </li>
-                    <li>
-                        <strong>Irish Museum of Modern Art</strong><br />
-                        Workshop with International Summer School Participants<br />
-                        June 2023
-                    </li>
-                    <li>
-                        <strong>UP Projects in partnership with Flat Time House and in association with Liverpool Biennial</strong><br />
-                        Workshop with Constellations 2023 participants<br />
-                        July 2023
-                    </li>
-                </ul>
-            </p>
-
-            <h4>Methodology</h4>
-            <p class="lead">
-                <ol>
-                    <li class="lead">
-                        <strong>Submissions</strong>: Submitted cases are collected through an open form into a database and prioritized based on the provided information. If there are no sufficient information, they are archived until additional sources are provided. A committee of fact-checkers including lawyers, artists, gallerists, curators, and other art workers evaluate the cases.
-                    </li>
-                    <li class="lead">
-                        <strong>Assignment</strong>: Committee members periodically view the cases, and based on their knowledge of the institution and the type of issue they assign themselves to a case.
-                    </li>
-                    <li class="lead">
-                        <strong>Research & Analysis</strong>: The assigned committee member conducts research within a fixed period. After they complete their research, they provide a minimum of two evidence (documents, media links, witnesses, or evidence of the issue being not a personal but a systemic one), and they mark the case as FAIL, SUCCEED, COMPLEX, or UNCERTAIN. If a committee member is not certain about the case, then they ask for a second look, and another fact-checker is assigned to work on it. [1]
-                    </li>
-                    <li class="lead">
-                        <strong>Publishing</strong>: After the case is marked as FAIL or SUCCEED, then a secondary review is conducted by another committee member. If the reviewer says the research is valid, then the case is published on the database and the graph is updated on the website. If a case is marked as COMPLEX or UNCERTAIN, they are archived until more information is provided.
-                    </li>
-                    <li class="lead">
-                        <strong>Impact & Updates</strong>: After the case is published, if the institution fixes the issue and reaches us about it, then the status of the issue is updated.
-                    </li>
-                </ol>
-                <em>[1] A common fact-checking method used by the members of International Fact-Checking Network.</em>
-            </p>
-
-            <h4>Principles</h4>
-            <p class="lead">
-                <ol>
-                    <li class="lead">
-                        <strong>Commitment to fairness</strong>: We are committed to be fair and open. We conduct research on all sides of the issue. We follow the same process for every fact check and let the evidence dictate the conclusions.
-                    </li>
-                    <li class="lead">
-                        <strong>Commitment to transparency of sources</strong>: We want our readers to be able to verify findings themselves. Therefore, we are committed to transparency of sources. We provide all sources in enough detail that readers can replicate their work, except in cases where a source’s personal security could be compromised. In such cases, we provide as much detail as possible.
-                    </li>
-                    <li class="lead">
-                        <strong>Commitment to transparency of funding & organization</strong>: If we accept funding from other organizations, we ensure that funders have no influence over the conclusions the fact-checkers reach in their reports.
-                    </li>
-                    <li class="lead">
-                        <strong>Commitment to transparency of methodology</strong>: We explain the methodology we use to select, research, write, edit, publish and correct the fact checks. We encourage readers to send claims to fact-check and are transparent on why and how we fact-check.
-                    </li>
-                    <li class="lead">
-                        <strong>Commitment to open & honest corrections</strong>: We correct clearly and transparently to ensure that readers can see the corrected version.
-                    </li>
-                </ol>
-            </p>
+        <div class="graphNote">
+          Drag, zoom, and click on the nodes to explore.
+          <a href="https://graphcommons.com/graphs/fd9aa39c-ca69-4a20-9e11-898bbb9e20e5/" target="_blank"
+            rel="noreferrer">View larger ↗</a>
         </div>
-    </div>
-
-    <div class="bg-light position-relative overflow-hidden p-3 p-md-5 m-md-3 pt-5">
-        <div class="row">
-            <div class="col-12 col-md mb-4">
-                <h5>Code of Acquisitions</h5>
-                <p class="d-block mb-3 text-muted">&copy; 2019-2023</p>
-            </div>
-            <div class="col-12 col-md mb-4">
-                <h5>Contact</h5>
-                <ul class="list-unstyled text-small">
-                    <li><a href="https://www.instagram.com/code_of_acquisitions/">Instagram</a></li>
-                    <li><a href="https://twitter.com/codeacquisition">Twitter</a></li>
-                    <li><a href="mailto:codeofacquisitions@gmail.com">Email</a></li>
-                </ul>
-            </div>
-            <div class="col-12 col-md pr-5 mb-4">
-                <h5>Evaluation Comittee</h5>
-                A committee of fact-checkers including lawyers, artists, gallerists, curators, and other art workers review and evaluate the submitted cases.
-            </div>
-            <div class="col-12 col-md mb-4">
-                <h5>Sister Initiatives</h5>
-                <ul class="list-unstyled text-small">
-                    <li><a href="https://www.accessdocsforartists.com" target="_blank">Access Docs for Artists</a></li>
-                    <li><a href="https://decolonialhacker.org" target="_blank">Decolonial Hacker</a></li>
-                    <li><a href="https://wageforwork.com/" target="_blank">W.A.G.E.</a></li>
-                    <li><a href="https://www.facebook.com/SdJcollective" target="_blank">Soup Du Jour Collective</a></li>
-                    <li><a href="https://art-leaks.org/" target="_blank">Art Leaks</a></li>
-                    <li><a href="https://legacy.graphcommons.com/stories/009fdfbc-93bf-41e2-a308-0193d6128877" target="_blank">Radical Transparency / Scam The Scam</a></li>
-                    <li><a href="https://docs.google.com/spreadsheets/d/14_cn3afoas7NhKvHWaFKqQGkaZS5rvL6DFxzGqXQa6o/edit" target="_blank">Art + Museum Transparency</a></li>
-                    <li><a href="https://www.sacklerpain.org/" target="_blank">P.A.I.N.</a></li>
-                    <li><a href="https://precariousworkersbrigade.tumblr.com/ethicscode" target="_blank">Precarious Workers Brigade</a></li>
-                    <li><a href="https://migrantsinculture.com/" target="_blank">Migrants in Culture</a></li>
-                    <li><a href="https://gulflabour.org/" target="_blank">Gulf Labor Artist Coalition</a></li>
-                    <li><a href="https://www.artnews.com/2019/05/17/we-will-come-back-decolonize-this-place-leads-protest-at-whitney-marches-to-controversial-board-members-house/" target="_blank">Decolonize This Place</a></li>
-                    <li><a href="https://www.indexoncensorship.org/2011/12/palestinian-artist-censorship-lacoste-elysee-prize/" target="_blank">Index on Censorship</a></li>
-                    <li><a href="https://www.indexoncensorship.org/2019/05/museum-of-dissidence-cubas-new-constitution-does-not-represent-us-as-cubans-intellectuals-or-humans/" target="_blank">The Museum of Dissidence</a></li>
-                    <li><a href="https://web.archive.org/web/20210619100310/https://siyahbant.org/" target="_blank">Siyah Bant</a></li>
-                    <li><a href="https://exilegallery.org/uncategorized/arts-of-the-working-class-issue-1-a-city-is-a-stateless-mind/" target="_blank">Arts of the Working Class</a></li>
-                    <li><a href="https://kunstenaarshonorarium.nl/en/" target="_blank">Kunstenaars Honorarium</a></li>
-                    <li><a href="https://www.facebook.com/futureclimates/" target="_blank">Future Climates</a></li>
-                    <li><a href="https://ifcncodeofprinciples.poynter.org/" target="_blank">International Fact-Checking Network</a></li>
-                </ul>
-            </div>
+        <div class="warningMobile">
+          🖥 Please view on a large screen
         </div>
+      </div>
     </div>
+  </div>
+
+  <div class="justify-content-center d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+    <div class="mr-md-3 pt-3 px-3 pt-md-5 px-md-5 overflow-hidden">
+      <h4>About</h4>
+      <p class="lead">
+        Code of Acquisitions is a platform exposing both good and bad practices of art institutions, galleries,
+        and studios.
+        It is based on published policies as well as reported cases of misconduct and abuse.
+        Instances include artists not being paid, being misled post-sales, or not having their works returned.
+      </p>
+      <p class="lead">
+        Often, artists find it challenging to pursue legal action against a conflict due to their precarious
+        conditions, and particularly because lack of establishing individual legal proceedings overseas.
+      </p>
+      <p class="lead">
+        The Code of Acquisitions platform allows anyone to submit their cases, either anonymously or openly.
+        Cases could range from gender and race discrimination to misconduct of payments.
+        Such submissions contribute to a database of conflicts, codes, and interactive visualizations
+        that will increase awareness about the issues and hold organizations accountable through their
+        reputation.
+      </p>
+
+      <h4>Case Submission</h4>
+      <p class="lead">
+        <strong><a href="https://forms.gle/6kjv5jAk2R1kGAJA8" target="_blank">Submit a case</a></strong> of
+        misconduct or abuse you've experienced with an
+        institution or a gallery or a studio.
+      </p>
+
+      <h4>Workshops</h4>
+      <p class="lead">
+        We conduct workshops upon invitation from institutions (<a
+          href="mailto:codeofacquisitions@gmail.com?subject=Code of Acquisitions Workshop">contact for
+          workshops</a>).
+        During these sessions, participants propose cases based on published sources, and collectively evaluate
+        them, and add the cases to the database.
+      <ul>
+        <li>
+          <strong>CASTRO (Contemporary Art STudios ROma)</strong><br />
+          Workshop with Fellows of CASTRO<br />
+          April 2024
+        </li>
+        <li>
+          <strong>Bauhaus-Universität Weimar</strong><br />
+          Workshop with students of Department of Architecture and Urbanism<br />
+          June 2023
+        </li>
+        <li>
+          <strong>Irish Museum of Modern Art</strong><br />
+          Workshop with International Summer School Participants<br />
+          June 2023
+        </li>
+        <li>
+          <strong>UP Projects in partnership with Flat Time House and in association with Liverpool
+            Biennial</strong><br />
+          Workshop with Constellations 2023 participants<br />
+          July 2023
+        </li>
+      </ul>
+      </p>
+
+      <h4>Methodology</h4>
+      <p class="lead">
+      <ol>
+        <li class="lead">
+          <strong>Submissions</strong>: Submitted cases are collected through an open form into a database and
+          prioritized based on the provided information. If there are no sufficient information, they are
+          archived until additional sources are provided. A committee of fact-checkers including lawyers,
+          artists, gallerists, curators, and other art workers evaluate the cases.
+        </li>
+        <li class="lead">
+          <strong>Assignment</strong>: Committee members periodically view the cases, and based on their
+          knowledge of the institution and the type of issue they assign themselves to a case.
+        </li>
+        <li class="lead">
+          <strong>Research & Analysis</strong>: The assigned committee member conducts research within a fixed
+          period. After they complete their research, they provide a minimum of two evidence (documents, media
+          links, witnesses, or evidence of the issue being not a personal but a systemic one), and they mark
+          the case as FAIL, SUCCEED, COMPLEX, or UNCERTAIN. If a committee member is not certain about the
+          case, then they ask for a second look, and another fact-checker is assigned to work on it. [1]
+        </li>
+        <li class="lead">
+          <strong>Publishing</strong>: After the case is marked as FAIL or SUCCEED, then a secondary review is
+          conducted by another committee member. If the reviewer says the research is valid, then the case is
+          published on the database and the graph is updated on the website. If a case is marked as COMPLEX or
+          UNCERTAIN, they are archived until more information is provided.
+        </li>
+        <li class="lead">
+          <strong>Impact & Updates</strong>: After the case is published, if the institution fixes the issue
+          and reaches us about it, then the status of the issue is updated.
+        </li>
+      </ol>
+      <em>[1] A common fact-checking method used by the members of International Fact-Checking Network.</em>
+      </p>
+
+      <h4>Principles</h4>
+      <p class="lead">
+      <ol>
+        <li class="lead">
+          <strong>Commitment to fairness</strong>: We are committed to be fair and open. We conduct research
+          on all sides of the issue. We follow the same process for every fact check and let the evidence
+          dictate the conclusions.
+        </li>
+        <li class="lead">
+          <strong>Commitment to transparency of sources</strong>: We want our readers to be able to verify
+          findings themselves. Therefore, we are committed to transparency of sources. We provide all sources
+          in enough detail that readers can replicate their work, except in cases where a source’s personal
+          security could be compromised. In such cases, we provide as much detail as possible.
+        </li>
+        <li class="lead">
+          <strong>Commitment to transparency of funding & organization</strong>: If we accept funding from
+          other organizations, we ensure that funders have no influence over the conclusions the fact-checkers
+          reach in their reports.
+        </li>
+        <li class="lead">
+          <strong>Commitment to transparency of methodology</strong>: We explain the methodology we use to
+          select, research, write, edit, publish and correct the fact checks. We encourage readers to send
+          claims to fact-check and are transparent on why and how we fact-check.
+        </li>
+        <li class="lead">
+          <strong>Commitment to open & honest corrections</strong>: We correct clearly and transparently to
+          ensure that readers can see the corrected version.
+        </li>
+      </ol>
+      </p>
+    </div>
+  </div>
+
+  <div class="bg-light position-relative overflow-hidden p-3 p-md-5 m-md-3 pt-5">
+    <div class="row">
+      <div class="col-12 col-md mb-4">
+        <h5>Code of Acquisitions</h5>
+        <p class="d-block mb-3 text-muted">&copy; 2019-2024</p>
+      </div>
+      <div class="col-12 col-md mb-4">
+        <h5>Contact</h5>
+        <ul class="list-unstyled text-small">
+          <li><a href="https://www.instagram.com/code_of_acquisitions/">Instagram</a></li>
+          <li><a href="https://twitter.com/codeacquisition">Twitter</a></li>
+          <li><a href="mailto:codeofacquisitions@gmail.com">Email</a></li>
+        </ul>
+      </div>
+      <div class="col-12 col-md pr-5 mb-4">
+        <h5>Evaluation Comittee</h5>
+        A committee of fact-checkers including lawyers, artists, gallerists, curators, and other art workers
+        review and evaluate the submitted cases.
+      </div>
+      <div class="col-12 col-md mb-4">
+        <h5>Sister Initiatives</h5>
+        <ul class="list-unstyled text-small">
+          <li><a href="https://www.accessdocsforartists.com" target="_blank">Access Docs for Artists</a></li>
+          <li><a href="https://decolonialhacker.org" target="_blank">Decolonial Hacker</a></li>
+          <li><a href="https://wageforwork.com/" target="_blank">W.A.G.E.</a></li>
+          <li><a href="https://www.facebook.com/SdJcollective" target="_blank">Soup Du Jour Collective</a>
+          </li>
+          <li><a href="https://art-leaks.org/" target="_blank">Art Leaks</a></li>
+          <li><a href="https://legacy.graphcommons.com/stories/009fdfbc-93bf-41e2-a308-0193d6128877"
+              target="_blank">Radical Transparency / Scam The Scam</a></li>
+          <li><a href="https://docs.google.com/spreadsheets/d/14_cn3afoas7NhKvHWaFKqQGkaZS5rvL6DFxzGqXQa6o/edit"
+              target="_blank">Art + Museum Transparency</a></li>
+          <li><a href="https://www.sacklerpain.org/" target="_blank">P.A.I.N.</a></li>
+          <li><a href="https://precariousworkersbrigade.tumblr.com/ethicscode" target="_blank">Precarious
+              Workers Brigade</a></li>
+          <li><a href="https://migrantsinculture.com/" target="_blank">Migrants in Culture</a></li>
+          <li><a href="https://gulflabour.org/" target="_blank">Gulf Labor Artist Coalition</a></li>
+          <li><a
+              href="https://www.artnews.com/2019/05/17/we-will-come-back-decolonize-this-place-leads-protest-at-whitney-marches-to-controversial-board-members-house/"
+              target="_blank">Decolonize This Place</a></li>
+          <li><a href="https://www.indexoncensorship.org/2011/12/palestinian-artist-censorship-lacoste-elysee-prize/"
+              target="_blank">Index on Censorship</a></li>
+          <li><a
+              href="https://www.indexoncensorship.org/2019/05/museum-of-dissidence-cubas-new-constitution-does-not-represent-us-as-cubans-intellectuals-or-humans/"
+              target="_blank">The Museum of Dissidence</a></li>
+          <li><a href="https://web.archive.org/web/20210619100310/https://siyahbant.org/" target="_blank">Siyah Bant</a>
+          </li>
+          <li><a
+              href="https://exilegallery.org/uncategorized/arts-of-the-working-class-issue-1-a-city-is-a-stateless-mind/"
+              target="_blank">Arts of the Working Class</a></li>
+          <li><a href="https://kunstenaarshonorarium.nl/en/" target="_blank">Kunstenaars Honorarium</a></li>
+          <li><a href="https://www.facebook.com/futureclimates/" target="_blank">Future Climates</a></li>
+          <li><a href="https://ifcncodeofprinciples.poynter.org/" target="_blank">International Fact-Checking
+              Network</a></li>
+          <li><a href="https://artworkersitalia.it" target="_blank">Art Workers Italia</a></li>
+          <li><a href="https://anga.live" target="_blank">Art Not Genocide Alliance</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
 
 </body>
+
 </html>
