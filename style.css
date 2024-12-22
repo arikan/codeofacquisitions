@@ -1,87 +1,26 @@
-@import url(https://fonts.googleapis.com/css?family=Lato:900);
-*, *:before, *:after{
-  box-sizing:border-box;
-}
-body{
-  font-family: 'Lato', sans-serif;
-}
-div.logo{
-  margin: 0 auto;
-  text-align: center;
-  line-height: 1;
-}
-.lead {
-  font-size: 2rem;
-  opacity: 0.8;
-}
-.lead.head {
-  font-size: 2rem;
-  margin-bottom: 2.5rem;
-  margin-top: 2.5rem;
-  color: red;
-}
-ol {
-  padding: 0 10rem 0 4rem;
-}
-ol > li.lead > strong {
-  /* text-decoration: underline; */
-  font-weight: 700;
-}
-h4 {
-  margin-bottom: 1rem !important;
-}
-a {
-  color: red !important;
-}
-a:hover {
-  color: red !important;
-}
-a.btn {
-  color: white !important;
-}
-
-/* @media (min-width: 576px) { */
-@media only screen and (max-width: 40em) {
-  .letter{
-    font-size: 2.5em !important;
-  }
-  .lead{
-    font-size: 1rem !important;
-  }
-  .lead.head {
-    margin-bottom: 1.5rem;
-    margin-top: 1.5rem;
-  }
-  .btn-group-lg > .btn, .btn-lg {
-    font-size: 1rem !important;
-  }
-  ol {
-    padding: 0 1rem 0 1rem;
-  }
-}
-
+/* Letter animation styles */
 .letter{
   display: inline-block;
+  position: relative;
   font-weight: 900;
   font-size: 8em;
   margin: 0.1em;
-  position: relative;
   color: red;
   transform-style: preserve-3d;
   perspective: 400;
   z-index: 1;
 }
 .letter:before, .letter:after{
-  position:absolute;
+  position: absolute;
   content: attr(data-letter);
   transform-origin: top left;
   top:0;
   left:0;
 }
-.letter, .letter:before, .letter:after{
+.letter, .letter:before, .letter:after {
   transition: all 0.3s ease-in-out;
 }
-.letter:before{
+.letter:before {
   color: #fff;
   text-shadow:
     -1px 0px 1px rgba(255,255,255,.8),
@@ -92,7 +31,7 @@ a.btn {
     rotateY(-15deg)
     rotateZ(0deg);
 }
-.letter:after{
+.letter:after {
   color: rgba(0,0,0,.11);
   z-index:2;
   transform:
@@ -102,67 +41,18 @@ a.btn {
     rotateZ(0deg)
     skew(0deg,1deg);
 }
-.letter:hover:before{
+.letter:hover:before {
   color: #fafafa;
   transform:
     rotateX(0deg)
     rotateY(-40deg)
     rotateZ(0deg);
 }
-.letter:hover:after{
+.letter:hover:after {
   transform:
     scale(1.08,1)
     rotateX(0deg)
     rotateY(40deg)
     rotateZ(0deg)
     skew(0deg,22deg);
-}
-
-.graphDesc {
-  width: 100%;
-  display: flex;
-  flex: 1 1;
-  justify-content: space-between;
-  align-items: center;
-  font-size: .8rem;
-  line-height: 130%;
-  padding: 1em;
-  margin-bottom: 1em;
-  border: 1px solid #f5f5f5;
-  background: #f5f5f5;
-}
-
-iframe {
-  overflow: hidden;
-  border: 3px solid #f5f5f5;
-  width: 100%;
-  min-width: 100%;
-  height: 640px;
-  min-height: 640px;
-}
-
-.warningMobile {
-  display: none;
-  font-size: .8rem;
-}
-
-@media only screen and (max-width: 40em) {
-
-  iframe {
-    height: 320px;
-    min-height: 320px;
-  }
-
-  .warningMobile {
-    display: block;
-    margin-top: 1em;
-    text-align: center !important;
-  }
-  .graphDesc {
-    display: block;
-    text-align: center;
-  }
-  .graphDesc .graphNote {
-      display: none;
-    }
 }

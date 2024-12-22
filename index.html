@@ -1,298 +1,526 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" class="scroll-smooth">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="Burak Arıkan & Ahmet Öğüt">
-
-  <link href="style.css" rel="stylesheet">
-  <link href="product.css" rel="stylesheet">
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-
-
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:site" content="@codeacquisition" />
-  <meta name="twitter:title" content="Code of Acquisitions" />
-  <meta name="twitter:description"
-    content="Mapping art institutions and galleries in relation to their ethical codes" />
-  <meta name="twitter:image"
-    content="https://s3.amazonaws.com/gc-system-images/graphs/images/4ec2e5c1-80db-454f-bae3-7dc73c92110e/original/Firefox_Developer_EditionScreenSnapz331.png?1569356868" />
-  <meta name="twitter:url" content="https://codeofacquisitions.org/" />
-  <meta name="twitter:image:src"
-    content="https://s3.amazonaws.com/gc-system-images/graphs/images/4ec2e5c1-80db-454f-bae3-7dc73c92110e/original/Firefox_Developer_EditionScreenSnapz331.png?1569356868">
-  <meta name="twitter:domain" content="https://codeofacquisitions.org/">
-
-  <meta property="og:url" content="https://codeofacquisitions.org/" />
-  <meta property="og:title" content="Code of Acquisitions" />
-  <meta property="og:description" content="Mapping art institutions and galleries in relation to their ethical codes" />
-  <meta property="og:image"
-    content="https://s3.amazonaws.com/gc-system-images/graphs/images/4ec2e5c1-80db-454f-bae3-7dc73c92110e/original/Firefox_Developer_EditionScreenSnapz331.png?1569356868" />
-
-  <title>Code of Acquisitions</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code of Acquisitions</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <link href="style.css" rel="stylesheet">
+    <style>
+      @keyframes fadeIn {
+          from { opacity: 0; transform: translateY(20px); }
+          to { opacity: 1; transform: translateY(0); }
+      }
+      .animate-fade-in {
+          animation: fadeIn 0.8s ease-out forwards;
+      }
+      section[id], div[id] {
+          scroll-margin-top: 100px;
+      }
+      .mobile-menu {
+          transition: transform 0.3s ease-in-out;
+      }
+      .mobile-menu.hidden {
+          display: none;
+      }
+    </style>
 </head>
+<body class="bg-slate-50 text-slate-800">
 
-<body>
-  <div class="position-relative overflow-hidden text-center pt-5">
-    <div class="col-md-10 p-lg-12 mx-auto my-12">
-      <div class="logo">
-        <span class="letter" data-letter="C">C</span>
-        <span class="letter" data-letter="O">O</span>
-        <span class="letter" data-letter="D">D</span>
-        <span class="letter" data-letter="E">E</span>
-        <span class="letter" data-letter=""></span>
-        <span class="letter" data-letter="O">O</span>
-        <span class="letter" data-letter="F">F</span>
-        <span class="letter" data-letter=""></span>
-        <span class="letter" data-letter="A">A</span>
-        <span class="letter" data-letter="C">C</span>
-        <span class="letter" data-letter="Q">Q</span>
-        <span class="letter" data-letter="U">U</span>
-        <span class="letter" data-letter="I">I</span>
-        <span class="letter" data-letter="S">S</span>
-        <span class="letter" data-letter="I">I</span>
-        <span class="letter" data-letter="T">T</span>
-        <span class="letter" data-letter="I">I</span>
-        <span class="letter" data-letter="O">O</span>
-        <span class="letter" data-letter="N">N</span>
-        <span class="letter" data-letter="S">S</span>
-      </div>
-      <p class="lead head font-weight-normal">
-        Exposing the good and bad practices of art institutions, galleries, and studios
-      </p>
-      <a class="btn btn-outline btn-danger btn-lg" target="_blank" href="https://forms.gle/6kjv5jAk2R1kGAJA8">
-        Submit your case
-      </a>
-    </div>
-  </div>
+  <nav class="fixed top-0 w-full bg-white/80 backdrop-blur-md z-50 border-b border-slate-200">
+    <div class="container mx-auto px-4 py-4">
+        <div class="flex justify-between items-center">
+            <a href="#" class="text-xl md:text-2xl font-bold text-slate-800">Code of Acquisitions</a>
 
-  <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
-    <div class="mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-      <iframe src="https://graphcommons.com/graphs/fd9aa39c-ca69-4a20-9e11-898bbb9e20e5/e" width="100%" height="640"
-        frameborder="0" allowfullscreen>
-      </iframe>
-      <div class="graphDesc">
-        <div>
-          <span style="color: blue">Art Institution (Blue)</span>,
-          <span style="color: black">Ethic Code (Black)</span>,
-          <span style="color: red">FAILS (Red)</span>,
-          <span style="color: green">SUCCEEDS (Green)</span>
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="#about" class="hover:text-red-600 transition-colors">About</a>
+                <a href="#workshops" class="hover:text-red-600 transition-colors">Workshops</a>
+                <a href="#methodology" class="hover:text-red-600 transition-colors">Methodology</a>
+                <a href="#principles" class="hover:text-red-600 transition-colors">Principles</a>
+                <a href="https://forms.gle/6kjv5jAk2R1kGAJA8" target="_blank"
+                   class="bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700 transition-colors">
+                    Submit Case
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="menuButton" class="md:hidden p-2" aria-label="Menu">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
+            </button>
         </div>
-        <div class="graphNote">
-          Drag, zoom, and click on the nodes to explore.
-          <a href="https://graphcommons.com/graphs/fd9aa39c-ca69-4a20-9e11-898bbb9e20e5/" target="_blank"
-            rel="noreferrer">View larger ↗</a>
+
+        <!-- Mobile Menu Panel -->
+        <div id="mobileMenu" class="hidden md:hidden">
+            <div class="py-4 space-y-4">
+                <a href="#about" class="block hover:text-red-600 transition-colors py-2">About</a>
+                <a href="#workshops" class="block hover:text-red-600 transition-colors py-2">Workshops</a>
+                <a href="#methodology" class="block hover:text-red-600 transition-colors py-2">Methodology</a>
+                <a href="#principles" class="block hover:text-red-600 transition-colors py-2">Principles</a>
+                <a href="https://forms.gle/6kjv5jAk2R1kGAJA8" target="_blank"
+                   class="block bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700 transition-colors text-center">
+                    Submit Case
+                </a>
+
+                <!-- Mobile Social Links -->
+                <div class="pt-4 mt-4 border-t border-slate-200">
+                    <div class="space-y-3">
+                        <a href="https://www.instagram.com/code_of_acquisitions/"
+                           class="flex items-center gap-2 text-slate-600 hover:text-red-600">
+                            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                            Instagram
+                        </a>
+                        <a href="https://twitter.com/codeacquisition"
+                           class="flex items-center gap-2 text-slate-600 hover:text-red-600">
+                            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                            </svg>
+                            X (Twitter)
+                        </a>
+                        <a href="mailto:codeofacquisitions@gmail.com"
+                           class="flex items-center gap-2 text-slate-600 hover:text-red-600">
+                            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                            </svg>
+                            Email
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="warningMobile">
-          🖥 Please view on a large screen
-        </div>
       </div>
-    </div>
-  </div>
+    </nav>
 
-  <div class="justify-content-center d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
-    <div class="mr-md-3 pt-3 px-3 pt-md-5 px-md-5 overflow-hidden">
-      <h4>About</h4>
-      <p class="lead">
-        Code of Acquisitions is a platform exposing both good and bad practices of art institutions, galleries,
-        and studios.
-        It is based on published policies as well as reported cases of misconduct and abuse.
-        Instances include artists not being paid, being misled post-sales, or not having their works returned.
-      </p>
-      <p class="lead">
-        Often, artists find it challenging to pursue legal action against a conflict due to their precarious
-        conditions, and particularly because lack of establishing individual legal proceedings overseas.
-      </p>
-      <p class="lead">
-        The Code of Acquisitions platform allows anyone to submit their cases, either anonymously or openly.
-        Cases could range from gender and race discrimination to misconduct of payments.
-        Such submissions contribute to a database of conflicts, codes, and interactive visualizations
-        that will increase awareness about the issues and hold organizations accountable through their
-        reputation.
-      </p>
+    <main class="container mx-auto px-4 pt-24">
+        <!-- Hero Section -->
+        <section class="min-h-[80vh] flex flex-col items-center justify-center text-center animate-fade-in">
+            <div class="logo mb-8 leading-none">
+              <span class="letter" data-letter="C">C</span>
+              <span class="letter" data-letter="O">O</span>
+              <span class="letter" data-letter="D">D</span>
+              <span class="letter" data-letter="E">E</span>
+              <span class="letter" data-letter=" "> </span>
+              <span class="letter" data-letter="O">O</span>
+              <span class="letter" data-letter="F">F</span>
+              <span class="letter" data-letter=" "> </span>
+              <span class="letter" data-letter="A">A</span>
+              <span class="letter" data-letter="C">C</span>
+              <span class="letter" data-letter="Q">Q</span>
+              <span class="letter" data-letter="U">U</span>
+              <span class="letter" data-letter="I">I</span>
+              <span class="letter" data-letter="S">S</span>
+              <span class="letter" data-letter="I">I</span>
+              <span class="letter" data-letter="T">T</span>
+              <span class="letter" data-letter="I">I</span>
+              <span class="letter" data-letter="O">O</span>
+              <span class="letter" data-letter="N">N</span>
+              <span class="letter" data-letter="S">S</span>
+            </div>
+            <p class="text-xl text-slate-600 max-w-2xl mb-12">
+                Mapping art institutions and galleries in relation to their ethical codes,
+                highlighting both exemplary and concerning practices in the art world.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto px-4">
+              <a href="https://forms.gle/6kjv5jAk2R1kGAJA8" target="_blank"
+                 class="w-full sm:w-auto bg-red-600 text-white px-8 py-4 rounded-xl hover:bg-red-700 transition-colors text-lg inline-flex items-center justify-center gap-2">
+                  Submit Your Case
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                  </svg>
+              </a>
+              <a href="#about"
+                 class="w-full sm:w-auto bg-slate-100 px-8 py-4 rounded-xl hover:bg-slate-200 transition-colors text-lg text-slate-700 text-center">
+                  Learn More
+              </a>
+            </div>
+        </section>
 
-      <h4>Case Submission</h4>
-      <p class="lead">
-        <strong><a href="https://forms.gle/6kjv5jAk2R1kGAJA8" target="_blank">Submit a case</a></strong> of
-        misconduct or abuse you've experienced with an
-        institution or a gallery or a studio.
-      </p>
+        <!-- Graph Section -->
+        <section class="my-20">
+          <div class="bg-white rounded-2xl shadow-xl p-4 md:p-8">
+            <iframe src="https://graphcommons.com/graphs/fd9aa39c-ca69-4a20-9e11-898bbb9e20e5/e" class="w-full h-[640px] rounded-lg" frameborder="0" allowfullscreen>
+            </iframe>
+            <div class="mt-4 text-center">
+              <div class="flex flex-col sm:flex-row justify-center gap-4 sm:gap-8 text-sm mb-4 sm:mb-2">
+                  <span class="flex items-center justify-center gap-2 text-blue-500">
+                      <div class="w-3 h-3 rounded-full bg-blue-500"></div>
+                      Art Institution
+                  </span>
+                  <span class="flex items-center justify-center gap-2">
+                      <div class="w-3 h-3 rounded-full bg-black"></div>
+                      Ethic Code
+                  </span>
+                  <span class="flex items-center justify-center gap-2 text-red-500">
+                      <div class="h-[3px] w-8 bg-red-500"></div>
+                      FAILS
+                  </span>
+                  <span class="flex items-center justify-center gap-2 text-green-500">
+                      <div class="h-[3px] w-8 bg-green-500"></div>
+                      SUCCEEDS
+                  </span>
+              </div>
+              <div class="flex flex-col text-slate-600 mt-4">
+                <div>
+                  Drag, zoom, and click on the nodes to explore.
+                </div>
+                <a href="https://graphcommons.com/graphs/fd9aa39c-ca69-4a20-9e11-898bbb9e20e5/"
+                    target="_blank"
+                    class="text-red-600 hover:underline">
+                    View larger ↗
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
 
-      <h4>Workshops</h4>
-      <p class="lead">
-        We conduct workshops upon invitation from institutions (<a
-          href="mailto:codeofacquisitions@gmail.com?subject=Code of Acquisitions Workshop">contact for
-          workshops</a>).
-        During these sessions, participants propose cases based on published sources, and collectively evaluate
-        them, and add the cases to the database.
-      <ul>
-        <li>
-          <strong>CASTRO (Contemporary Art STudios ROma)</strong><br />
-          Workshop with Fellows of CASTRO<br />
-          April 2024
-        </li>
-        <li>
-          <strong>Bauhaus-Universität Weimar</strong><br />
-          Workshop with students of Department of Architecture and Urbanism<br />
-          June 2023
-        </li>
-        <li>
-          <strong>Irish Museum of Modern Art</strong><br />
-          Workshop with International Summer School Participants<br />
-          June 2023
-        </li>
-        <li>
-          <strong>UP Projects in partnership with Flat Time House and in association with Liverpool
-            Biennial</strong><br />
-          Workshop with Constellations 2023 participants<br />
-          July 2023
-        </li>
-      </ul>
-      </p>
 
-      <h4>Methodology</h4>
-      <p class="lead">
-      <ol>
-        <li class="lead">
-          <strong>Submissions</strong>: Submitted cases are collected through an open form into a database and
-          prioritized based on the provided information. If there are no sufficient information, they are
-          archived until additional sources are provided. A committee of fact-checkers including lawyers,
-          artists, gallerists, curators, and other art workers evaluate the cases.
-        </li>
-        <li class="lead">
-          <strong>Assignment</strong>: Committee members periodically view the cases, and based on their
-          knowledge of the institution and the type of issue they assign themselves to a case.
-        </li>
-        <li class="lead">
-          <strong>Research & Analysis</strong>: The assigned committee member conducts research within a fixed
-          period. After they complete their research, they provide a minimum of two evidence (documents, media
-          links, witnesses, or evidence of the issue being not a personal but a systemic one), and they mark
-          the case as FAIL, SUCCEED, COMPLEX, or UNCERTAIN. If a committee member is not certain about the
-          case, then they ask for a second look, and another fact-checker is assigned to work on it. [1]
-        </li>
-        <li class="lead">
-          <strong>Publishing</strong>: After the case is marked as FAIL or SUCCEED, then a secondary review is
-          conducted by another committee member. If the reviewer says the research is valid, then the case is
-          published on the database and the graph is updated on the website. If a case is marked as COMPLEX or
-          UNCERTAIN, they are archived until more information is provided.
-        </li>
-        <li class="lead">
-          <strong>Impact & Updates</strong>: After the case is published, if the institution fixes the issue
-          and reaches us about it, then the status of the issue is updated.
-        </li>
-      </ol>
-      <em>[1] A common fact-checking method used by the members of International Fact-Checking Network.</em>
-      </p>
+        <!-- About Section -->
+        <section id="about" class="grid grid-cols-1 md:grid-cols-2 gap-12 my-20">
+            <div class="space-y-6">
+                <h2 class="text-3xl font-bold">About</h2>
+                <p class="text-lg text-slate-600">
+                    Code of Acquisitions is a platform exposing both good and bad practices of art institutions, galleries,
+                    and studios. It is based on published policies as well as reported cases of misconduct and abuse.
+                    Instances include artists not being paid, being misled post-sales, or not having their works returned.
+                </p>
+                <p class="text-lg text-slate-600">
+                    Often, artists find it challenging to pursue legal action against a conflict due to their precarious
+                    conditions, and particularly because lack of establishing individual legal proceedings overseas.
+                </p>
+                <p class="text-lg text-slate-600">
+                    The Code of Acquisitions platform allows anyone to submit their cases, either anonymously or openly.
+                    Cases could range from gender and race discrimination to misconduct of payments.
+                </p>
+            </div>
 
-      <h4>Principles</h4>
-      <p class="lead">
-      <ol>
-        <li class="lead">
-          <strong>Commitment to fairness</strong>: We are committed to be fair and open. We conduct research
-          on all sides of the issue. We follow the same process for every fact check and let the evidence
-          dictate the conclusions.
-        </li>
-        <li class="lead">
-          <strong>Commitment to transparency of sources</strong>: We want our readers to be able to verify
-          findings themselves. Therefore, we are committed to transparency of sources. We provide all sources
-          in enough detail that readers can replicate their work, except in cases where a source’s personal
-          security could be compromised. In such cases, we provide as much detail as possible.
-        </li>
-        <li class="lead">
-          <strong>Commitment to transparency of funding & organization</strong>: If we accept funding from
-          other organizations, we ensure that funders have no influence over the conclusions the fact-checkers
-          reach in their reports.
-        </li>
-        <li class="lead">
-          <strong>Commitment to transparency of methodology</strong>: We explain the methodology we use to
-          select, research, write, edit, publish and correct the fact checks. We encourage readers to send
-          claims to fact-check and are transparent on why and how we fact-check.
-        </li>
-        <li class="lead">
-          <strong>Commitment to open & honest corrections</strong>: We correct clearly and transparently to
-          ensure that readers can see the corrected version.
-        </li>
-      </ol>
-      </p>
-    </div>
-  </div>
+            <!-- Workshops Section -->
+            <div id="workshops" class="space-y-6">
+              <h2 class="text-3xl font-bold">Workshops</h2>
+              <p class="text-lg text-slate-600 mb-6">
+                  We conduct workshops upon invitation from institutions. During these sessions, participants propose cases based on published sources, collectively evaluate them, and add them to the database.
+              </p>
+              <a href="mailto:codeofacquisitions@gmail.com?subject=Code of Acquisitions Workshop"
+                class="inline-block bg-slate-100 px-6 py-3 rounded-lg text-slate-700 hover:bg-slate-200 transition-colors border border-slate-200 shadow-sm">
+                  Contact for Workshop
+              </a>
+              <div class="space-y-4 mt-6">
+                  <div class="bg-white p-4 rounded-lg">
+                      <h3 class="font-bold">Weaving Liberation</h3>
+                      <p class="text-slate-600">
+                        Workshop with Weaving Liberation participants<br>
+                        Sarajevo, Bosnia and Herzegovina<br>
+                        October, 2024
+                      </p>
+                  </div>
 
-  <div class="bg-light position-relative overflow-hidden p-3 p-md-5 m-md-3 pt-5">
-    <div class="row">
-      <div class="col-12 col-md mb-4">
-        <h5>Code of Acquisitions</h5>
-        <p class="d-block mb-3 text-muted">&copy; 2019-2024</p>
-      </div>
-      <div class="col-12 col-md mb-4">
-        <h5>Contact</h5>
-        <ul class="list-unstyled text-small">
-          <li><a href="https://www.instagram.com/code_of_acquisitions/">Instagram</a></li>
-          <li><a href="https://twitter.com/codeacquisition">Twitter</a></li>
-          <li><a href="mailto:codeofacquisitions@gmail.com">Email</a></li>
-        </ul>
-      </div>
-      <div class="col-12 col-md pr-5 mb-4">
-        <h5>Evaluation Comittee</h5>
-        A committee of fact-checkers including lawyers, artists, gallerists, curators, and other art workers
-        review and evaluate the submitted cases.
-      </div>
-      <div class="col-12 col-md mb-4">
-        <h5>Sister Initiatives</h5>
-        <ul class="list-unstyled text-small">
-          <li><a href="https://www.accessdocsforartists.com" target="_blank">Access Docs for Artists</a></li>
-          <li><a href="https://decolonialhacker.org" target="_blank">Decolonial Hacker</a></li>
-          <li><a href="https://wageforwork.com/" target="_blank">W.A.G.E.</a></li>
-          <li><a href="https://www.facebook.com/SdJcollective" target="_blank">Soup Du Jour Collective</a>
-          </li>
-          <li><a href="https://art-leaks.org/" target="_blank">Art Leaks</a></li>
-          <li><a href="https://legacy.graphcommons.com/stories/009fdfbc-93bf-41e2-a308-0193d6128877"
-              target="_blank">Radical Transparency / Scam The Scam</a></li>
-          <li><a href="https://docs.google.com/spreadsheets/d/14_cn3afoas7NhKvHWaFKqQGkaZS5rvL6DFxzGqXQa6o/edit"
-              target="_blank">Art + Museum Transparency</a></li>
-          <li><a href="https://www.sacklerpain.org/" target="_blank">P.A.I.N.</a></li>
-          <li><a href="https://precariousworkersbrigade.tumblr.com/ethicscode" target="_blank">Precarious
-              Workers Brigade</a></li>
-          <li><a href="https://migrantsinculture.com/" target="_blank">Migrants in Culture</a></li>
-          <li><a href="https://gulflabour.org/" target="_blank">Gulf Labor Artist Coalition</a></li>
-          <li><a
-              href="https://www.artnews.com/2019/05/17/we-will-come-back-decolonize-this-place-leads-protest-at-whitney-marches-to-controversial-board-members-house/"
-              target="_blank">Decolonize This Place</a></li>
-          <li><a href="https://www.indexoncensorship.org/2011/12/palestinian-artist-censorship-lacoste-elysee-prize/"
-              target="_blank">Index on Censorship</a></li>
-          <li><a
-              href="https://www.indexoncensorship.org/2019/05/museum-of-dissidence-cubas-new-constitution-does-not-represent-us-as-cubans-intellectuals-or-humans/"
-              target="_blank">The Museum of Dissidence</a></li>
-          <li><a href="https://web.archive.org/web/20210619100310/https://siyahbant.org/" target="_blank">Siyah Bant</a>
-          </li>
-          <li><a
-              href="https://exilegallery.org/uncategorized/arts-of-the-working-class-issue-1-a-city-is-a-stateless-mind/"
-              target="_blank">Arts of the Working Class</a></li>
-          <li><a href="https://kunstenaarshonorarium.nl/en/" target="_blank">Kunstenaars Honorarium</a></li>
-          <li><a href="https://www.facebook.com/futureclimates/" target="_blank">Future Climates</a></li>
-          <li><a href="https://ifcncodeofprinciples.poynter.org/" target="_blank">International Fact-Checking
-              Network</a></li>
-          <li><a href="https://artworkersitalia.it" target="_blank">Art Workers Italia</a></li>
-          <li><a href="https://anga.live" target="_blank">Art Not Genocide Alliance</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
+                  <div class="bg-white p-4 rounded-lg">
+                      <h3 class="font-bold">CASTRO (Contemporary Art STudios ROma)</h3>
+                      <p class="text-slate-600">
+                        Workshop with Fellows of CASTRO<br>
+                        Rome<br>
+                        April 2024
+                      </p>
+                  </div>
 
+                  <div class="bg-white p-4 rounded-lg">
+                      <h3 class="font-bold">Bauhaus-Universität Weimar</h3>
+                      <p class="text-slate-600">
+                        Workshop with students of Department of Architecture and Urbanism<br>
+                        Weimar<br>
+                        June 2023
+                      </p>
+                  </div>
+
+                  <div class="bg-white p-4 rounded-lg">
+                      <h3 class="font-bold">Irish Museum of Modern Art</h3>
+                      <p class="text-slate-600">
+                        Workshop with International Summer School Participants<br>
+                        Dublin<br>
+                        June 2023
+                      </p>
+                  </div>
+
+                  <div class="bg-white p-4 rounded-lg">
+                      <h3 class="font-bold">UP Projects in partnership with Flat Time House and Liverpool Biennial</h3>
+                      <p class="text-slate-600">
+                        Workshop with Constellations 2023 participants<br>
+                        Liverpool<br>
+                        July 2023
+                      </p>
+                  </div>
+              </div>
+          </div>
+        </section>
+
+        <!-- Methodology and Principles Sections -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-12 my-20">
+            <!-- Methodology Section -->
+            <div id="methodology">
+                <h2 class="text-3xl font-bold mb-6">Methodology</h2>
+                <div class="space-y-4">
+                    <div class="bg-white p-4 rounded-lg border border-slate-100">
+                        <h3 class="text-lg font-bold text-red-600">1. Submissions</h3>
+                        <p class="text-slate-600 text-sm">
+                            Submitted cases are collected through an open form into a database and prioritized based on the provided information. A committee of fact-checkers evaluate the cases.
+                        </p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg border border-slate-100">
+                        <h3 class="text-lg font-bold text-red-600">2. Assignment</h3>
+                        <p class="text-slate-600 text-sm">
+                            Committee members periodically view and assign themselves to cases based on their expertise.
+                        </p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg border border-slate-100">
+                        <h3 class="text-lg font-bold text-red-600">3. Research & Analysis</h3>
+                        <p class="text-slate-600 text-sm">
+                            Assigned members conduct research and mark cases as FAIL, SUCCEED, COMPLEX, or UNCERTAIN.
+                        </p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg border border-slate-100">
+                        <h3 class="text-lg font-bold text-red-600">4. Publishing</h3>
+                        <p class="text-slate-600 text-sm">
+                            Cases undergo secondary review before being published in the database.
+                        </p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg border border-slate-100">
+                        <h3 class="text-lg font-bold text-red-600">5. Impact & Updates</h3>
+                        <p class="text-slate-600 text-sm">
+                            Status updates are made when institutions address and resolve issues.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Principles Section -->
+            <div id="principles">
+                <h2 class="text-3xl font-bold mb-6">Principles</h2>
+                <div class="space-y-4">
+                    <div class="bg-white p-4 rounded-lg border border-slate-100">
+                        <h3 class="text-lg font-bold text-red-600">Commitment to Fairness</h3>
+                        <p class="text-slate-600 text-sm">
+                            We conduct research on all sides of the issue and follow the same process for every fact check.
+                        </p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg border border-slate-100">
+                        <h3 class="text-lg font-bold text-red-600">Transparency of Sources</h3>
+                        <p class="text-slate-600 text-sm">
+                            We provide detailed sources for verification while protecting personal security when needed.
+                        </p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg border border-slate-100">
+                        <h3 class="text-lg font-bold text-red-600">Funding & Organization</h3>
+                        <p class="text-slate-600 text-sm">
+                            We ensure funders have no influence over fact-checkers' conclusions.
+                        </p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg border border-slate-100">
+                        <h3 class="text-lg font-bold text-red-600">Transparent Methodology</h3>
+                        <p class="text-slate-600 text-sm">
+                            We explain our methods for selecting, researching, writing, editing, and publishing fact checks.
+                        </p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg border border-slate-100">
+                        <h3 class="text-lg font-bold text-red-600">Open Corrections</h3>
+                        <p class="text-slate-600 text-sm">
+                            We correct clearly and transparently to ensure readers can see the corrected version.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sister Initiatives Section -->
+        <section id="initiatives" class="my-20">
+          <h2 class="text-3xl font-bold mb-8">Sister Initiatives</h2>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+              <a href="https://www.accessdocsforartists.com" target="_blank"
+                 class="group bg-white p-6 rounded-xl border border-slate-100 hover:border-red-200 transition-colors">
+                  <h3 class="font-bold text-lg group-hover:text-red-600 transition-colors">Access Docs for Artists</h3>
+                  <p class="text-sm text-slate-600 mt-2">Resources and documentation for artists</p>
+              </a>
+
+              <a href="https://decolonialhacker.org" target="_blank"
+                 class="group bg-white p-6 rounded-xl border border-slate-100 hover:border-red-200 transition-colors">
+                  <h3 class="font-bold text-lg group-hover:text-red-600 transition-colors">Decolonial Hacker</h3>
+                  <p class="text-sm text-slate-600 mt-2">Decolonial perspectives in art and technology</p>
+              </a>
+
+              <a href="https://wageforwork.com/" target="_blank"
+                 class="group bg-white p-6 rounded-xl border border-slate-100 hover:border-red-200 transition-colors">
+                  <h3 class="font-bold text-lg group-hover:text-red-600 transition-colors">W.A.G.E.</h3>
+                  <p class="text-sm text-slate-600 mt-2">Working Artists and the Greater Economy</p>
+              </a>
+
+              <a href="https://weavingliberation.org" target="_blank"
+                 class="group bg-white p-6 rounded-xl border border-slate-100 hover:border-red-200 transition-colors">
+                  <h3 class="font-bold text-lg group-hover:text-red-600 transition-colors">Weaving Liberation</h3>
+                  <p class="text-sm text-slate-600 mt-2">Collective art and liberation practices</p>
+              </a>
+
+              <a href="https://www.facebook.com/SdJcollective" target="_blank"
+                 class="group bg-white p-6 rounded-xl border border-slate-100 hover:border-red-200 transition-colors">
+                  <h3 class="font-bold text-lg group-hover:text-red-600 transition-colors">Soup Du Jour Collective</h3>
+                  <p class="text-sm text-slate-600 mt-2">Activist Group of Intersectional Feminism in the Art World</p>
+              </a>
+
+              <a href="https://art-leaks.org/" target="_blank"
+                 class="group bg-white p-6 rounded-xl border border-slate-100 hover:border-red-200 transition-colors">
+                  <h3 class="font-bold text-lg group-hover:text-red-600 transition-colors">Art Leaks</h3>
+                  <p class="text-sm text-slate-600 mt-2">Platform for exposing institutional wrongdoing</p>
+              </a>
+
+              <a href="https://docs.google.com/spreadsheets/d/14_cn3afoas7NhKvHWaFKqQGkaZS5rvL6DFxzGqXQa6o/edit?gid=0#gid=0" target="_blank"
+                 class="group bg-white p-6 rounded-xl border border-slate-100 hover:border-red-200 transition-colors">
+                  <h3 class="font-bold text-lg group-hover:text-red-600 transition-colors">Art + Museum Transparency</h3>
+                  <p class="text-sm text-slate-600 mt-2">All museums salary transparency (2019)</p>
+              </a>
+
+              <a href="https://www.sacklerpain.org/" target="_blank"
+                 class="group bg-white p-6 rounded-xl border border-slate-100 hover:border-red-200 transition-colors">
+                  <h3 class="font-bold text-lg group-hover:text-red-600 transition-colors">P.A.I.N.</h3>
+                  <p class="text-sm text-slate-600 mt-2">Advocacy for accountability in art institutions</p>
+              </a>
+
+              <a href="https://precariousworkersbrigade.tumblr.com/ethicscode" target="_blank"
+                 class="group bg-white p-6 rounded-xl border border-slate-100 hover:border-red-200 transition-colors">
+                  <h3 class="font-bold text-lg group-hover:text-red-600 transition-colors">Precarious Workers Brigade</h3>
+                  <p class="text-sm text-slate-600 mt-2">UK-based group of precarious workers in culture & education</p>
+              </a>
+
+              <a href="https://migrantsinculture.com/" target="_blank"
+                 class="group bg-white p-6 rounded-xl border border-slate-100 hover:border-red-200 transition-colors">
+                  <h3 class="font-bold text-lg group-hover:text-red-600 transition-colors">Migrants in Culture</h3>
+                  <p class="text-sm text-slate-600 mt-2">Support network for migrants in arts and culture</p>
+              </a>
+
+              <a href="https://gulflabour.org/" target="_blank"
+                 class="group bg-white p-6 rounded-xl border border-slate-100 hover:border-red-200 transition-colors">
+                  <h3 class="font-bold text-lg group-hover:text-red-600 transition-colors">Gulf Labor Artist Coalition</h3>
+                  <p class="text-sm text-slate-600 mt-2">Advocating for workers' rights in art institutions</p>
+              </a>
+
+              <a href="https://www.artnews.com/art-news/news/we-will-come-back-decolonize-this-place-leads-protest-at-whitney-marches-to-controversial-board-members-house-12590/" target="_blank"
+                 class="group bg-white p-6 rounded-xl border border-slate-100 hover:border-red-200 transition-colors">
+                  <h3 class="font-bold text-lg group-hover:text-red-600 transition-colors">Decolonize This Place</h3>
+                  <p class="text-sm text-slate-600 mt-2">Leads protests at Whitney Museum in New York</p>
+              </a>
+
+              <a href="https://www.indexoncensorship.org/2011/12/palestinian-artist-censorship-lacoste-elysee-prize/" target="_blank"
+                 class="group bg-white p-6 rounded-xl border border-slate-100 hover:border-red-200 transition-colors">
+                  <h3 class="font-bold text-lg group-hover:text-red-600 transition-colors">Index on Censorship</h3>
+                  <p class="text-sm text-slate-600 mt-2">A voice for the persecuted</p>
+              </a>
+
+              <a href="https://www.indexoncensorship.org/2019/05/museum-of-dissidence-cubas-new-constitution-does-not-represent-us-as-cubans-intellectuals-or-humans/" target="_blank"
+                 class="group bg-white p-6 rounded-xl border border-slate-100 hover:border-red-200 transition-colors">
+                  <h3 class="font-bold text-lg group-hover:text-red-600 transition-colors">The Museum of Dissidence</h3>
+                  <p class="text-sm text-slate-600 mt-2">Cuba’s new constitution does not represent us as Cubans, intellectuals or humans</p>
+              </a>
+
+              <a href="https://web.archive.org/web/20210619100310/https://siyahbant.org/" target="_blank"
+                 class="group bg-white p-6 rounded-xl border border-slate-100 hover:border-red-200 transition-colors">
+                  <h3 class="font-bold text-lg group-hover:text-red-600 transition-colors">Siyah Bant</h3>
+                  <p class="text-sm text-slate-600 mt-2">Documents, analyzez, and archives cases of censorship in the arts.</p>
+              </a>
+
+              <a href="https://artsoftheworkingclass.org" target="_blank"
+                 class="group bg-white p-6 rounded-xl border border-slate-100 hover:border-red-200 transition-colors">
+                  <h3 class="font-bold text-lg group-hover:text-red-600 transition-colors">Arts of the Working Class</h3>
+                  <p class="text-sm text-slate-600 mt-2">Bimonthly street journal with multilingual contributions, focused on working-class issues</p>
+              </a>
+
+              <a href="https://kunstenaarshonorarium.nl/en/" target="_blank"
+                 class="group bg-white p-6 rounded-xl border border-slate-100 hover:border-red-200 transition-colors">
+                  <h3 class="font-bold text-lg group-hover:text-red-600 transition-colors">Kunstenaars Honorarium</h3>
+                  <p class="text-sm text-slate-600 mt-2">Fair pay guidelines for artists</p>
+              </a>
+
+              <a href="https://www.facebook.com/futureclimates/" target="_blank"
+                 class="group bg-white p-6 rounded-xl border border-slate-100 hover:border-red-200 transition-colors">
+                  <h3 class="font-bold text-lg group-hover:text-red-600 transition-colors">Future Climates</h3>
+                  <p class="text-sm text-slate-600 mt-2">Platform that aims to propose viable futures for independent cultural practice</p>
+              </a>
+
+              <a href="https://ifcncodeofprinciples.poynter.org" target="_blank"
+                 class="group bg-white p-6 rounded-xl border border-slate-100 hover:border-red-200 transition-colors">
+                  <h3 class="font-bold text-lg group-hover:text-red-600 transition-colors">International Fact-Checking Network</h3>
+                  <p class="text-sm text-slate-600 mt-2">Guidance for publishing nonpartisan reports on the accuracy of statements by public figures and institutions</p>
+              </a>
+
+              <a href="https://artworkersitalia.it" target="_blank"
+                 class="group bg-white p-6 rounded-xl border border-slate-100 hover:border-red-200 transition-colors">
+                  <h3 class="font-bold text-lg group-hover:text-red-600 transition-colors">Art Workers Italia</h3>
+                  <p class="text-sm text-slate-600 mt-2">Supporting Italian art workers' rights</p>
+              </a>
+
+              <a href="https://precariousworkersbrigade.tumblr.com/ethicscode" target="_blank"
+                 class="group bg-white p-6 rounded-xl border border-slate-100 hover:border-red-200 transition-colors">
+                  <h3 class="font-bold text-lg group-hover:text-red-600 transition-colors">Precarious Workers Brigade</h3>
+                  <p class="text-sm text-slate-600 mt-2">UK-based platform for cultural workers' rights</p>
+              </a>
+
+              <a href="https://anga.live" target="_blank"
+                 class="group bg-white p-6 rounded-xl border border-slate-100 hover:border-red-200 transition-colors">
+                  <h3 class="font-bold text-lg group-hover:text-red-600 transition-colors">Art Not Genocide Alliance</h3>
+                  <p class="text-sm text-slate-600 mt-2">Advocacy against cultural genocide</p>
+              </a>
+          </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="border-t border-slate-200 py-12 mt-20">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+              <div>
+                  <h3 class="font-bold mb-4">Code of Acquisitions</h3>
+                  <p class="text-slate-600">&copy; 2019-2025</p>
+              </div>
+              <div>
+                  <h3 class="font-bold mb-4">Contact</h3>
+                  <div class="space-y-2">
+                      <a href="https://www.instagram.com/code_of_acquisitions/" class="block text-slate-600 hover:text-red-600">Instagram</a>
+                      <a href="https://twitter.com/codeacquisition" class="block text-slate-600 hover:text-red-600">X (Twitter)</a>
+                      <a href="mailto:codeofacquisitions@gmail.com" class="block text-slate-600 hover:text-red-600">Email</a>
+                  </div>
+              </div>
+              <div>
+                  <h3 class="font-bold mb-4">Evaluation Committee</h3>
+                  <p class="text-slate-600">
+                      A committee of fact-checkers including lawyers, artists, gallerists, curators, and other art workers
+                      review and evaluate the submitted cases.
+                  </p>
+              </div>
+          </div>
+      </footer>
+
+    </main>
+
+    <script>
+      // Mobile menu functionality
+      const menuButton = document.getElementById('menuButton');
+      const mobileMenu = document.getElementById('mobileMenu');
+      const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+
+      menuButton.addEventListener('click', () => {
+          mobileMenu.classList.toggle('hidden');
+      });
+
+      // Close mobile menu when a link is clicked
+      mobileMenuLinks.forEach(link => {
+          link.addEventListener('click', () => {
+              mobileMenu.classList.add('hidden');
+          });
+      });
+
+      // Close mobile menu when clicking outside
+      document.addEventListener('click', (e) => {
+          if (!e.target.closest('#mobileMenu') && !e.target.closest('#menuButton')) {
+              mobileMenu.classList.add('hidden');
+          }
+      });
+    </script>
 </body>
-
 </html>
